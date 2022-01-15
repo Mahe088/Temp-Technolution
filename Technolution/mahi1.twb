@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Bitcoinss (master)' inline='true' name='federated.01eu4c11hudb7w16h121q16k6ewp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='LAPTOP-3T4UQ4LQ\SQLEXPRESS' name='sqlserver.0kfa8zt1si1cja11eib1d1c25ddv'>
+            <connection authentication='sspi' class='sqlserver' dbname='master' odbc-native-protocol='yes' one-time-sql='' server='LAPTOP-3T4UQ4LQ\SQLEXPRESS' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='sqlserver.0kfa8zt1si1cja11eib1d1c25ddv' name='Bitcoinss' table='[dbo].[Bitcoinss]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='sqlserver.0kfa8zt1si1cja11eib1d1c25ddv' name='Bitcoinss' table='[dbo].[Bitcoinss]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Timestamp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Timestamp]</local-name>
+            <parent-name>[Bitcoinss]</parent-name>
+            <remote-alias>Timestamp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Bitcoinss_4791BFF9920C440C90B1F4C6C2464D29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BTCPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BTCPrice]</local-name>
+            <parent-name>[Bitcoinss]</parent-name>
+            <remote-alias>BTCPrice</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Bitcoinss_4791BFF9920C440C90B1F4C6C2464D29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[BTC Price (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[BTCPrice]' peg='0' size='124' />
+      </column>
+      <column caption='BTC Price' datatype='real' name='[BTCPrice]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Bitcoinss' datatype='table' name='[__tableau_internal_object_id__].[Bitcoinss_4791BFF9920C440C90B1F4C6C2464D29]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Bitcoinss' id='Bitcoinss_4791BFF9920C440C90B1F4C6C2464D29'>
+            <properties context=''>
+              <relation connection='sqlserver.0kfa8zt1si1cja11eib1d1c25ddv' name='Bitcoinss' table='[dbo].[Bitcoinss]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bitcoinss (master)' name='federated.01eu4c11hudb7w16h121q16k6ewp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01eu4c11hudb7w16h121q16k6ewp'>
+            <column datatype='integer' name='[BTC Price (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='2' formula='[BTCPrice]' peg='0' size='124' />
+            </column>
+            <column caption='BTC Price' datatype='real' name='[BTCPrice]' role='measure' type='quantitative' />
+            <column-instance column='[BTC Price (bin)]' derivation='None' name='[none:BTC Price (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BTCPrice]' derivation='Var' name='[var:BTCPrice:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.01eu4c11hudb7w16h121q16k6ewp].[var:BTCPrice:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.01eu4c11hudb7w16h121q16k6ewp].[var:BTCPrice:qk]' />
+              <color column='[federated.01eu4c11hudb7w16h121q16k6ewp].[var:BTCPrice:qk]' />
+              <text column='[federated.01eu4c11hudb7w16h121q16k6ewp].[none:BTC Price (bin):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C1D1D6A1-88EA-4ED0-AE4B-EB87C181967E}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01eu4c11hudb7w16h121q16k6ewp].[var:BTCPrice:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01eu4c11hudb7w16h121q16k6ewp].[none:BTC Price (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D1E7C84D-03C0-427A-AA86-7581C89E3FFD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
